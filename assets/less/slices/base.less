@@ -1,0 +1,27 @@
+
+@link-color: #f6a03a;
+@link-color-hover: lighten(@link-color, 50%);
+@OpenSanExtraBold: ~"OpenSanExtraBold";
+@OpenSansRegular: ~"OpenSansRegular";
+@OpenSansSemibold: ~"OpenSansSemibold";
+@OpenSansItalic: ~"OpenSansItalic";
+@upper:~"uppercase"; 
+@center: ~"center";
+.box{
+    width:100%;
+    float: left;
+}
+body {
+    line-height: 32px;
+    font-size: 20px;
+    color: #454054;
+    font-weight: 300; 
+}
+
+a {
+    outline: none !important;
+    text-decoration: none !important;
+    color: @link-color;
+    transition: all 225ms ease;   
+}
+p { margin-bottom: 18px; }
