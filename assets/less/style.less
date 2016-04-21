@@ -679,6 +679,7 @@
 					bottom: -20px; 
 					border-left:15px solid rgba(0, 0, 0, 0);
 					border-right:15px solid rgba(0, 0, 0, 0);
+					z-index: 30;
 					}		
 				}
 				.breacum{
@@ -858,6 +859,41 @@
 	background: @gray-backcop;
 	.box;
 	overflow: hidden;
+	.container{
+		.title-single{
+			padding: 49px 0;
+			overflow: hidden;
+			.col-md-6{
+				h1{
+					font-family:@OpenSansSemibold ;
+					font-size:@font-size-logo-span ;
+					color:@gray-h;
+					margin:0;
+					line-height: @line-height-h1-single;
+				}
+				ul{
+					float: right;
+					padding-top: 5px;
+					margin-bottom: 0;
+					li{
+						list-style: none;
+						display: inline;
+						padding: 8px 12px;
+						background: @gray-button;
+						border-radius: 4px;
+						box-shadow: 0 3px @gray-h;
+						&:hover{
+							background: @red-box-shadow;
+							box-shadow: 0 3px @red-box-shadow;
+						}
+						a{
+							color:@white;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 // mediaquerry
