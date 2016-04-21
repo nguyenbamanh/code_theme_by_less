@@ -32,7 +32,7 @@
 		padding-bottom:10px;
 		padding-top:10px;
 		.container{
-			padding: 13px 0 0 0;
+			padding-top: 13px;
 			.col-md-1{
 				line-height:@line-height-p;
 				.search{
@@ -653,6 +653,86 @@
 			padding-left:20px;
 			font-size:@font-size-medium;
 			line-height: @line-height-content;
+		}
+	}
+}
+// css for portfolio_col1
+.breacrum{
+	background: @gray-light;	
+	.box;
+	.container{
+		.row{
+			.col-md-6{
+				h1{
+					color: @gray-h;
+					font-size: @font-size-footer;
+					float: left;
+					text-transform: @upper;
+					margin: 0;
+					line-height: @line-height-p;
+					padding: 24px 0;
+					font-family: @OpenSansSemibold;
+					&:before{
+					content: "";
+					border-top:16px solid @gray-light;
+					position: absolute;
+					bottom: -20px; 
+					border-left:15px solid rgba(0, 0, 0, 0);
+					border-right:15px solid rgba(0, 0, 0, 0);
+					}		
+				}
+				.breacum{
+					text-align: right;
+					margin: 0;
+					font-size: @font-size-small;
+					color:@gray-h;
+					text-transform: capitalize;
+					padding: 24px 0;
+					font-family: @OpenSansRegular;
+					a{
+						padding-right: 8px;
+						color:@gray-h;
+					}
+					span{
+						padding-left: 8px;
+					}
+				}
+			}
+		}
+	}
+}
+.content-ctegory{
+	background: @gray-backcop;
+	.box;
+	overflow: hidden;
+	.container{
+		.row{
+			.menu-category{
+				padding: 30px 0;
+				ul{
+
+					padding-left: 0;
+					li{
+						list-style: none;
+						display: inline;
+						a{
+							text-transform: @upper;
+							color:@white;
+							font-size: @font-size-base;
+							font-family: @OpenSansSemibold;
+							padding:10px;
+							border-radius: 4px;
+							background: @gray-button;
+							margin-left: 18px;
+							box-shadow: 0 3.5px @gray-h;
+							&:hover{
+								box-shadow: 0 3.5px @blue-box-shadow;
+								background: @blue-menu;
+							}
+						}
+					}
+				}
+			}
 		}
 	}
 }
