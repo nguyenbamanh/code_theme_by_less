@@ -662,6 +662,7 @@
 	.box;
 	.container{
 		.row{
+			padding: 24px 0;
 			.col-md-6{
 				h1{
 					color: @gray-h;
@@ -670,7 +671,6 @@
 					text-transform: @upper;
 					margin: 0;
 					line-height: @line-height-p;
-					padding: 24px 0;
 					font-family: @OpenSansSemibold;
 					&:before{
 					content: "";
@@ -687,7 +687,6 @@
 					margin: 0;
 					font-size: @font-size-small;
 					color:@gray-h;
-					padding: 24px 0;
 					font-family: @OpenSansRegular;
 					a{
 						padding:0 8px;
@@ -873,7 +872,7 @@
 				}
 				ul{
 					float: right;
-					padding-top: 5px;
+					padding:5px 0 0;
 					margin-bottom: 0;
 					li{
 						list-style: none;
@@ -894,7 +893,7 @@
 			}
 		}
 		.content-single{
-			margin:60px 0;
+			margin:60px 0 45px;
 			.box;
 			overflow: hidden;
 			.row{
@@ -1031,6 +1030,7 @@
 						.row{
 							.col-md-3{
 								.slide-single-img{
+									margin-top: 15px;
 									position: relative;
 									img{
 									border-radius: 4px;
@@ -1309,6 +1309,30 @@
 			}
 		}
 	 }	
+	// single
+	.single{
+	 	.container{
+	  		.slide-single{
+	   			.carousel {
+	   				.carousel-inner{
+	     				.item{
+	      					.row{
+	       						.col-md-3{
+	       							.slide-single-img{
+	        							.slide-single-hover{
+	        								ul {
+	        									padding-bottom: 30% 0 10%;
+	        								}
+	        							}
+	        						}
+	        					}
+	        				}
+	        			}
+	        		}
+	        	}
+	        }
+	    }    									
+	}
 }
 @media only screen and (max-width: @screen-xs) {
 // home
@@ -1492,6 +1516,27 @@
   	}
 }
 // postfolio_1col
+ .breacrum{
+ 	.container{
+ 		.row{
+ 			.col-md-6{
+ 				h1{
+ 					&:before{
+ 						border-width: 0;
+ 					}
+ 				}
+ 				.breacum{
+ 					float: left;
+ 					a{
+ 						&:first-child{
+ 							padding-left: 0;
+ 						}
+ 					}
+ 				}
+ 			}
+ 		}
+ 	}
+ }
  .content-ctegory{
   	.container{
    		.row{
@@ -1528,4 +1573,32 @@
 	 	margin:0;
 	 }
  }
+ //single
+ .single{
+ 	padding: 0;
+ 	.container{
+ 	 	.title-single{
+ 	 		padding: 0 0 10px;
+ 	  		.col-md-6{
+ 	  			 ul {
+ 	  				float: left;
+ 	  			}
+ 	  			h1{
+ 	  				line-height: @line-height-p;
+ 	  				margin: 15px 0;
+ 	  			}
+ 	  		}	
+ 	  	}
+ 	  	.content-single{
+ 	  		margin: 15px 0;
+ 	  	}
+ 	  	.slide-single{
+ 	  		padding-bottom: 45px;
+ 	  		h2{
+ 	  			padding-bottom: 45px;
+ 	  		}
+ 	  	}
+ 	}
+ }
+
 }
